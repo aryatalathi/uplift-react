@@ -22,6 +22,9 @@ function Calculator() {
                   setAns(variables.value1-variables.value2);
               }
 
+              function percent(){
+                setAns(variables.value1*variables.value2/100);
+              }
               function multiply(){
                   setAns(variables.value1*variables.value2);
               }
@@ -36,6 +39,7 @@ function Calculator() {
                       <input onChange={updateVariables} type="number" placeholder="Second Value" name="value2"/>
                       <button onClick={add}>ADDITION</button>
                       <button onClick={subtract}>SUBTRACTION</button>
+                      <button onClick={percent}>PERCENTAGE</button>
                       <button onClick={multiply}>MULTIPLICATION</button>
                       <button onClick={divide}>DIVISION</button>
                       <h1 className="heading">ANSWER IS : {ans}</h1>
