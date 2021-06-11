@@ -34,7 +34,7 @@ function Calculator() {
               }
               return (
                   <div className="SIMPLE CALCULATOR">
-                      <h1>SIMPLE CALCULATOR</h1>
+                      <h1>SIMPLE CALCULATOR </h1>
                       <input onChange={updateVariables} type="number" placeholder="First Value" name="value1"/>
                       <input onChange={updateVariables} type="number" placeholder="Second Value" name="value2"/>
                       <button onClick={add}>ADDITION</button>
